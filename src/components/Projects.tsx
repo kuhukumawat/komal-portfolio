@@ -15,7 +15,7 @@ const projects = [
     demo: "https://www.jumunona.com"
   },
   {
-    title: "BuddyPaws",
+    title: "BuddyPaws*(Web and Admin Panel)*",
     category: "Web App (Next.js)",
     description: "Social platform for pet owners featuring profile matching and interactive community features.",
     image: "/buddy-paws.webp",
