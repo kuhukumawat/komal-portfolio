@@ -90,32 +90,32 @@ export default function Projects() {
               className="group relative"
             >
               {/* Image Container */}
-              <div className="relative overflow-hidden rounded-3xl aspect-[16/10] border border-white/5 shadow-2xl">
+              <div className="relative overflow-hidden rounded-3xl aspect-[4/5] sm:aspect-square md:aspect-[16/10] border border-white/5 shadow-2xl">
                 <Image
                   src={project.image}
                   alt={project.title}
                   width={400}
                   height={300}
-                  className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110 opacity-70"
+                  className="object-cover w-full h-full transition-transform duration-700 md:group-hover:scale-110 opacity-70"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent opacity-90 md:opacity-60 md:group-hover:opacity-40 transition-opacity"></div>
 
                 {/* Content Overlay */}
-                <div className="absolute bottom-0 left-0 right-0 p-8 transform translate-y-6 group-hover:translate-y-0 transition-transform duration-500">
-                  <div className="flex flex-wrap gap-2 mb-4">
+                <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 transform translate-y-0 md:translate-y-6 md:group-hover:translate-y-0 transition-transform duration-500">
+                  <div className="flex flex-wrap gap-2 mb-3 md:mb-4">
                     {project.tech.map((t, i) => (
                       <span key={i} className="px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/10 text-xs font-semibold text-white">
                         {t}
                       </span>
                     ))}
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-2">{project.title}</h3>
-                  <p className="text-slate-300 text-sm mb-6 line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <h3 className="text-xl md:text-2xl font-bold text-white mb-2">{project.title}</h3>
+                  <p className="text-slate-300 text-sm mb-4 md:mb-6 line-clamp-3 md:line-clamp-2 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500">
                     {project.description}
                   </p>
 
-                  <div className="flex items-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
-                    <a href={project.demo} target="_blank" className="px-8 py-3 rounded-full bg-indigo-600 text-white text-sm font-bold flex items-center gap-2 hover:bg-indigo-700 transition-all shadow-lg hover:shadow-indigo-500/20">
+                  <div className="flex items-center gap-4 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                    <a href={project.demo} target="_blank" className="px-6 py-2.5 md:px-8 md:py-3 rounded-full bg-indigo-600 text-white text-sm font-bold flex items-center gap-2 hover:bg-indigo-700 transition-all shadow-lg hover:shadow-indigo-500/20">
                       Live Demo <ExternalLink size={18} />
                     </a>
                   </div>

@@ -49,36 +49,36 @@ export default function Contact() {
 
             <div className="space-y-6">
               <div className="flex items-center gap-6 group">
-                <div className="w-14 h-14 rounded-2xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 border border-indigo-500/20 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300">
+                <div className="shrink-0 w-14 h-14 rounded-2xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 border border-indigo-500/20 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300">
                   <Mail size={24} />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-xs text-slate-500 font-medium uppercase tracking-widest mb-1">Email Me</p>
-                  <a href="mailto:kumawat.komal0115@gmail.com" className="text-xl font-bold text-slate-200 hover:text-indigo-400 transition-colors">
+                  <a href="mailto:kumawat.komal0115@gmail.com" className="text-lg sm:text-xl font-bold text-slate-200 hover:text-indigo-400 transition-colors break-all md:break-normal">
                     kumawat.komal0115@gmail.com
                   </a>
                 </div>
               </div>
 
               <div className="flex items-center gap-6 group">
-                <div className="w-14 h-14 rounded-2xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 border border-indigo-500/20 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300">
+                <div className="shrink-0 w-14 h-14 rounded-2xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 border border-indigo-500/20 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300">
                   <Phone size={24} />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-xs text-slate-500 font-medium uppercase tracking-widest mb-1">Call Me</p>
-                  <p className="text-xl font-bold text-slate-200">
+                  <p className="text-lg sm:text-xl font-bold text-slate-200">
                     +91 9079664354
                   </p>
                 </div>
               </div>
 
               <div className="flex items-center gap-6 group">
-                <div className="w-14 h-14 rounded-2xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 border border-indigo-500/20 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300">
+                <div className="shrink-0 w-14 h-14 rounded-2xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 border border-indigo-500/20 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300">
                   <MapPin size={24} />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-xs text-slate-500 font-medium uppercase tracking-widest mb-1">Location</p>
-                  <p className="text-xl font-bold text-slate-200">
+                  <p className="text-lg sm:text-xl font-bold text-slate-200">
                     Jaipur, Rajasthan, India
                   </p>
                 </div>
