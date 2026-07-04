@@ -14,24 +14,48 @@ import {
 
 const skillCategories = [
   {
-    title: "Core Technologies",
+    title: "Frontend Development",
     icon: <Code2 className="text-indigo-400" />,
-    skills: ["React.js", "Next.js", "JavaScript (ES6+)", "TypeScript"]
+    skills: [
+      "React.js",
+      "Next.js",
+      "JavaScript (ES6+)",
+      "TypeScript"
+    ]
   },
   {
     title: "Styling & UI",
     icon: <Layout className="text-indigo-400" />,
-    skills: ["Tailwind CSS", "CSS3", "HTML5", "Framer Motion"]
+    skills: [
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+      "Responsive Design",
+      "Mobile-First Design"
+    ]
   },
   {
-    title: "Tools & Design",
-    icon: <Figma className="text-indigo-400" />,
-    skills: ["Figma", "Git/GitHub", "NPM/Yarn", "Postman"]
+    title: "Backend & CMS",
+    icon: <Database className="text-indigo-400" />,
+    skills: [
+      "REST APIs",
+      "Strapi CMS",
+      "Node.js (Basics)",
+      "Express.js (Basics)",
+      "Python (Basics)"
+    ]
   },
   {
-    title: "Expertise",
+    title: "Performance & Tools",
     icon: <Settings className="text-indigo-400" />,
-    skills: ["Responsive Design", "SSR", "Performance Optimization", "SEO Strategy"]
+    skills: [
+      "SSR",
+      "SSG",
+      "SEO Optimization",
+      "Git",
+      "GitHub",
+      "Figma"
+    ]
   }
 ];
 
